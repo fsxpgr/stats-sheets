@@ -1,0 +1,1 @@
+bun run ${PWD}/Documents/stat-sheets/index.js && exit
