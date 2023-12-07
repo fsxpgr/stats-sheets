@@ -76,6 +76,10 @@ export const insertDataToGoogleSheets = async (data) => {
     resource: {
       values: data.map(it => Object.values(it)),
     },
-  });
+  }, {});
 }
 
+
+export async function cleanUpGoogleToken() {
+  return fs.unlink(TOKEN_PATH)
+}
